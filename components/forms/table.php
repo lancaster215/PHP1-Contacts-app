@@ -1,4 +1,4 @@
-<div class="cards">
+<div class="w3-responsive" style="width: 60%;">
     <?php
         $open = fopen("../contacts.txt", "r+") or exit ("Cannot open file!");
         while(!feof($open)){
@@ -7,7 +7,7 @@
             if($item[0] == null){
                 // echo "Empty Table :(";
             }else{
-                echo" <table>
+                echo" <table class='w3-table w3-bordered'>
                     <tr>
                         <th>First Name</th>
                         <th>Middle Name</th>
